@@ -37,10 +37,10 @@ Make the directories =modules/editor= in your doom directory, (usually =~/.confi
 mkdir -p ~/.doom.d/modules/editor && git clone https://github.com/Not-Leader/doom-meow ~/.doom.d/modules/editor/meow
 #+END_SRC sh
 
-Then add =meow= to the =:editor= section of the init.el of your doom directory, with the module flag matching your layout and (recommended) with the =+keypad= and =+override= module flags.
+Then add =meow= to the =:editor= section of the init.el of your doom directory, with the module flag matching your layout and (recommended) with the =+leader= and =+override= module flags.
 #+BEGIN_SRC elisp
 :editor
-(meow +qwerty +override +keypad)
+(meow +qwerty +override +leader)
 ;;(evil +everywhere); come to the dark side, we have cookies
 ...
 #+END_SRC elisp
