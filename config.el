@@ -18,23 +18,6 @@
   "9" #'meow-digit-argument
   "0" #'meow-digit-argument))
 
-;; Keypad
-(defun meow/setup-keypad ()
- (map! :map meow-keypad-state-keymap
-  "?" #'meow-cheatsheet
-  "/" #'meow-keypad-describe-key
-  "1" #'meow-digit-argument
-  "2" #'meow-digit-argument
-  "3" #'meow-digit-argument
-  "4" #'meow-digit-argument
-  "5" #'meow-digit-argument
-  "6" #'meow-digit-argument
-  "7" #'meow-digit-argument
-  "8" #'meow-digit-argument
-  "9" #'meow-digit-argument
-  "0" #'meow-digit-argument
-  "h" #'help-command))
-
 ;; applies to all layouts (except dvp)
 (defun meow/setup ()
   (map! :map meow-normal-state-keymap
@@ -324,5 +307,5 @@
     (map! :map meow-beacon-state-keymap
      doom-leader-key nil)
     (meow/setup-leader))
-   (t (meow/setup-keypad)))
+   (t nil))
   (map! :map meow-keymap [remap describe-key] #'helpful-key))
