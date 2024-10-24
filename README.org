@@ -17,6 +17,10 @@
   - [[#module-flags][Module Flags]]
   - [[#plugins][Plugins]]
 
+* This repo is deprecated!
+
+This is the archive for old doom-module,  please use the [[https://github.com/meow-edit/doom-meow][new one]].
+
 * Overview
 
 This community module by me and [[https://github.com/VitalyAnkh][Vitaly]] (their older commits can be seen in the archived repository) adds support for [[https://github.com/meow-edit/meow][meow]], a global minor-mode for simple but powerful modal editing.
@@ -80,7 +84,7 @@ Meow uses a local kill ring by default, but it can be modified to use the local 
 * Description
 
 ** Module Flags
-+ ~+colemak~ Add default configuration for ~colemak~ layout. 
++ ~+colemak~ Add default configuration for ~colemak~ layout.
 + ~+dvorak~ Add default configuration for ~dvorak~ layout.
 + ~+dvp~ Add default configuration for ~dvp~ layout.
 + ~+qwerty~ Add default configuration for ~qwerty~ layout.
@@ -90,4 +94,3 @@ Meow uses a local kill ring by default, but it can be modified to use the local 
 ** Plugins
 
 + [[https://github.com/meow-edit/meow][meow]]
-
